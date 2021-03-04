@@ -134,7 +134,7 @@
             var lan = document.getElementById("lan");
             var temp = document.getElementById("temp");
 
-            var weatherAPI = fetch("http://api.openweathermap.org/data/2.5/weather?q=" + countryName + "&appid=cc7670c9ef868e16633ab398d81a0e1f");
+            var weatherAPI = fetch("https://api.openweathermap.org/data/2.5/weather?q=" + countryName + "&appid=cc7670c9ef868e16633ab398d81a0e1f");
             weatherAPI.then((response) => {
                 return response.json();
             }).then((data) => {
